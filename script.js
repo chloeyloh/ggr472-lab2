@@ -9,20 +9,24 @@ const map = new mapboxgl.Map({
     zoom: 12 // starting zoom
 });
 
-// Adding my GeoJSON source to the map using the raw link from my Lab 1's GitHub repository
-map.addSource('lab1map', {
-    type: 'geojson',
-    data: 'https://raw.githubusercontent.com/chloeyloh/ggr472-lab1/refs/heads/main/lab1map.geojson'
-});
+map.on('load', () => {
+    // Adding my GeoJSON source to the map using the raw link from my Lab 1's GitHub repository
+    map.addSource('lab1map', {
+        type: 'geojson',
+        data: 'https://raw.githubusercontent.com/chloeyloh/ggr472-lab1/refs/heads/main/lab1map.geojson'
+    });
 
-// Adding the layers to the map to visualize the GeoJSON data with specified styling
-map.addLayer({
-    id: 'American Psycho',
-    type: 'circle',
-    source: 'lab1map',
-    paint: {
-        'circle-radius': 5,
-        'circle-color': '#bcbf00ff'
-    }
-});
+
+
+    // Adding the layers to the map to visualize the GeoJSON data with specified styling
+    map.addLayer({
+        id: 'American Psycho',
+        type: 'circle',
+        source: 'lab1map',
+        paint: {
+            'circle-radius': 5,
+            'circle-color': '#bcbf00ff'
+        }
+    });
+
 
