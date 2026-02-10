@@ -44,8 +44,8 @@ map.on('load', () => {
         },
 
         'sourcelayer': 'chloeloh.avth8srk' // Links to tileset layer created from the GeoJSON data in Mapbox Studio
-    }, 
-    'filming-point' // Places this layer above the 'filming-point' layer to ensure labels are visible on top of the markers
-    );     
+    },
+        'filming-point' // Puts this layer above the 'filming-point' layer to ensure labels are visible on top of the markers
+    );
 });
 
