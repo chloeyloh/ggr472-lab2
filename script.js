@@ -11,6 +11,12 @@ const map = new mapboxgl.Map({
 
 // Sets when the map has finished loading and then adds the GeoJSON source and layer to visualize the film spots data on the map
 map.on('load', () => {
+    // Adding my style from Mapbox Studio to the map using the style URL
+    map.addSource('toronto-film-spots', {
+        type: 'vector',
+        url: 'mapbox://chloeloh.9h8l7j1i' // URL of the tileset created from the GeoJSON data in Mapbox Studio
+    });
+
     // Adding my GeoJSON source to the map using the raw link from my Lab 1's GitHub repository
     map.addSource('film-spots-data', {
         type: 'geojson',

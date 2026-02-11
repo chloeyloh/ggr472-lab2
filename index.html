@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<!-- This is the main HTML file for the web map application. It includes the necessary libraries and links to the CSS and
-JavaScript files. The map will be displayed in the div with id "my-map". -->
+<!-- This is the main HTML file for the web map with the necessary libraries and links to the CSS and JavaScript files -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toronto Film Spots Web Map</title>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.js"></script>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.css" rel="stylesheet" />
+    <!--Mapbox GL JS link-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.js'></script>
+    <!--Mapbox GL JS CSS file-->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.css' rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="map" class="map-container"></div>
+    <!--Map container-->
+    <div id="my-map" class="map-container"></div>
+    <!--Legend container-->
     <script src="script.js"></script>
 </body>
 

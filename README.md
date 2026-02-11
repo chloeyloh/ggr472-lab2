@@ -1,5 +1,6 @@
 # Interactive Web Map of Film Spots throughout Toronto
 ## GGR472 Lab 2 - Introducing Mapbox GL JS
+https://chloeyloh.github.io/ggr472-lab2/ 
 
 ### Project Overview
 My project builds on Lab 1 by transitioning from a webpage to an interactive web map using the **Mapbox GL JS** library. The map visualizes filming locations across Toronto, combining a custom basemap with live-loaded spatial data layers.
